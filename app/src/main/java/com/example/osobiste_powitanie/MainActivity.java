@@ -48,14 +48,12 @@ public class MainActivity extends AppCompatActivity {
                 String name = edit.getText().toString().trim();
 
                 if (name.isEmpty()) {
-                    //bedzie tu blad jesli jest puste pole
                     new AlertDialog.Builder(MainActivity.this)
                             .setTitle("Błąd")
                             .setMessage("Proszę wpisać swoje imię!")
                             .setPositiveButton("OK", null)
                             .show();
                 } else {
-                    //tu sie tam spyta czy chce powiadomienie jesli pole jest wypelnione
                     new AlertDialog.Builder(MainActivity.this)
                             .setTitle("Potwierdzenie")
                             .setMessage("Cześć " + name + "! Czy chcesz otrzymać powiadomienie powitalne?")
